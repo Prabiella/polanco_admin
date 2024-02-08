@@ -2,7 +2,6 @@
 
 
 
-
 /* Script ocultar password */
 
 function togglePasswordVisibility() {
@@ -67,7 +66,7 @@ function addOption(selectId, inputId) {
 /* Canvas */
 
 
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
   
 
 
@@ -157,3 +156,18 @@ function mostrarImagen() {
         };
 
     });
+
+ */
+
+    /* Firma */
+    document.addEventListener("DOMContentLoaded", function() {
+        var canvas = document.querySelector("canvas");
+        var signaturePad = new SignaturePad(canvas);
+    
+        document.getElementById("clear").addEventListener("click", function() {
+            signaturePad.clear();
+        });
+       
+      });
+    
+    

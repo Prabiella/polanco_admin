@@ -436,6 +436,86 @@ Inician estilos del admin
 }
 
 
+
+.scrolling-text {
+    border: 1px dotted #A2A2A2;
+    border-radius: 5px;
+    overflow-y: scroll;
+    max-height: 200px;
+    max-width: 90%;
+    padding: 10px;
+    background-color: #fdfdfd;
+}
+
+
+.titleg {
+    padding-left: 15px;
+}
+
+
+.scrolling-text p{
+    margin: 0px;
+   color: #000000;
+   font-size: 0.9rem;
+  
+}
+
+/* Estilos modulo firma */
+.signature-pad {
+    border: 1px dotted #ABAFB3;
+    background-color: #F3F6F9;
+    border-radius: 5px;
+    width: 300px;
+    height: 150px;
+    cursor: crosshair; /* Cambia el cursor para indicar que se puede dibujar */
+  }
+
+  .subSig{
+    font-size: 0.9rem;
+    color: #ABAFB3;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+  
+
+/* Estilos input */
+
+.upload{
+   
+    padding: 0px;
+    min-width: 500px;
+    border-radius: 10px;
+}
+
+input#formFileMultiple {
+    background-color: #DDDFE1;
+    color: #000000;
+   
+ 
+}
+
+
+
+.input-with-image {
+    position: relative;
+}
+
+.formInput .col-sm-12 {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.file-icon {
+    position: absolute;
+    right: 0px; /* Ajusta la posición de la imagen según sea necesario */
+    max-height: 100%;
+}
+
+
+
+
+
   /* media queries */
   @media only screen and (max-width:767px) { 
 	

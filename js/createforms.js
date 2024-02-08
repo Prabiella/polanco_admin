@@ -258,6 +258,17 @@ $("#getHTML").on("click", function () {
                 <span>
                     <div class="form-row">
                         <div class="col">
+                        <h5 class="titleg mt-3">Aviso legal y termino y condiciones</h5>
+                        <div class="scrolling-text mb-3">
+                      
+                                <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </p>
+                        </div>
+
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck${formCount}">
                                 <label class="form-check-label" for="defaultCheck${formCount}" contenteditable="true">
@@ -380,8 +391,86 @@ $("#addHealthCare").on("click", function(){
 
   
 								
-								
-						
+
+        //-----------------------------------------
+    //          ADD SIGNIN
+    //-----------------------------------------
+
+/* 
+$("#addFirma").on("click", function(){
+        formCount++
+        $("#thisForm").append(`
+            <div class="formInput col-md-6">
+            <div class="row">
+			<div class="col-md-12">
+            <div id="signature-pad" class="signature-pad"></div>
+                 <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
+		 	</div>
+           
+		</div>
+        `)
+    })
+		 */
+	
+
+
+    $("#addFirma").on("click", function() {
+        formCount++;
+        $("#thisForm").append(`
+            <div class="formInput col-md-6">
+                <div class="row mt-3">
+                    <div class="col-md-12">
+                        <h5>Soy responsable de los datos y autorizo</h5>
+                        <p class="subSig">Firma lo más parecido a tu INE en el recuadro inferior</p>
+                        <div id="signature-pad-${formCount}" class="signature-pad">
+                            <canvas></canvas>
+                            <div class="text-right d-flex justify-content-end">
+                                <button id="clear" class="btn btn-primary add-option-btn">Limpiar</button>
+                            </div>
+                        </div>
+                        <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        `);
+    
+        // Agregar eventos para dibujar en la firma
+        var signaturePadId = `signature-pad-${formCount}`;
+        setupDrawingEvents(signaturePadId);
+    });
+    
+    function setupDrawingEvents(signaturePadId) {
+        var signaturePad = new SignaturePad(document.querySelector(`#${signaturePadId} canvas`));
+    
+        document.getElementById("clear").addEventListener("click", function() {
+            signaturePad.clear();
+        });
+    }
+    
+
+
+
+
+    //-----------------------------------------
+    //          ADD A FILE
+    //-----------------------------------------
+
+    $("#addFile").on("click", function(){
+        formCount++
+        $("#thisForm").append(`
+        <div class="formInput col-md-6 my-2">
+        <div class="col-sm-12 d-flex align-items-center">
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+            <img src="../img/upload.svg" alt="Imagen" class="file-icon" />
+        </div>
+        <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
+       
+    </div>
+        `)
+    })
+
+
+
 
 
 
@@ -569,10 +658,10 @@ $("#addHealthCare").on("click", function(){
     $("#tripleRadio").on("click", function(){
         formCount++
         $("#thisForm").append(`
-            <div class="formInput">
+            <div class="formInput col-md-6">
                 <span>
-                    <div class="form-row">
-                        <div class="col">
+                    <div class="form-row" style="display:flex;">
+                        <div class="col" style="flex: 1;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios${formCount}" value="option2">
                                 <label  class="form-check-label" contenteditable="true" for="exampleRadios${formCount}" >
@@ -580,7 +669,7 @@ $("#addHealthCare").on("click", function(){
                                 </label>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="flex: 1;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios${formCount}" value="option2">
                                 <label class="form-check-label" contenteditable="true" for="exampleRadios${formCount}">
@@ -588,7 +677,7 @@ $("#addHealthCare").on("click", function(){
                                 </label>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" style="flex: 1;">
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios${formCount}" value="option2">
                                 <label class="form-check-label" contenteditable="true" for="exampleRadios${formCount}">
@@ -597,6 +686,7 @@ $("#addHealthCare").on("click", function(){
                             </div>
                         </div>
                     </div>
+
                 </span>
             </div>
         `)
