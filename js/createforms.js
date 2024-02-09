@@ -396,24 +396,6 @@ $("#addHealthCare").on("click", function(){
     //          ADD SIGNIN
     //-----------------------------------------
 
-/* 
-$("#addFirma").on("click", function(){
-        formCount++
-        $("#thisForm").append(`
-            <div class="formInput col-md-6">
-            <div class="row">
-			<div class="col-md-12">
-            <div id="signature-pad" class="signature-pad"></div>
-                 <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
-		 	</div>
-           
-		</div>
-        `)
-    })
-		 */
-	
-
-
     $("#addFirma").on("click", function() {
         formCount++;
         $("#thisForm").append(`
@@ -471,6 +453,39 @@ $("#addFirma").on("click", function(){
 
 
 
+
+
+    //-----------------------------------------
+    //          ADD A PHOTO
+    //-----------------------------------------
+
+    $("#addPhoto").on("click", function() {
+        formCount++;
+        $("#thisForm").append(`
+
+        <div class="formInput col-md-6 my-3">
+        <h5 class="titleg mt-3">Captura de fotografía</h5>
+            <video id="video-${formCount}" autoplay></video>
+            <div class="d-grid gap-2 col-12 mx-auto my-3"> 
+                 <button id="take-photo-button-${formCount}" class="btn btn-dark btn-lg add-option-btn">Tomar Foto</button>
+            </div>
+           
+            <canvas id="canvas-${formCount}" style="display: none;"></canvas>
+            <img id="captured-image-${formCount}" alt="Imagen Capturada" style="display: none;">
+            <div class="d-grid gap-2 col-12 mx-auto my-3">
+                <button id="download-button-${formCount}" class="btn btn-warning btn-lg  add-option-btn" style="display: none;">Descargar Foto</button>
+            </div>
+
+            <button type="button" class="btn delete-button"><i class="fas fa-times"></i></button>
+        </div>
+        `);
+    
+        // Esperar a que se cargue el contenido antes de activar la funcionalidad de tomar una foto
+        // Para ello, llamamos a setupPhotoTaking dentro de un setTimeout
+    setTimeout(function() {
+        setupPhotoTaking(`video-${formCount}`, `take-photo-button-${formCount}`, `canvas-${formCount}`, `captured-image-${formCount}`, `download-button-${formCount}`);
+        }, 0);
+    });
 
 
 
