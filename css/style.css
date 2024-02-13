@@ -544,6 +544,10 @@ input#formFileMultiple {
     color: #000000;
 }
 
+.btnform p:hover{
+    color: #fff;
+}
+
 .center-img {
     display: block;
     margin: auto; /* Centra la imagen horizontalmente */

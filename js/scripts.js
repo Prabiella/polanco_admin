@@ -228,3 +228,4 @@ function mostrarImagen() {
         document.body.removeChild(downloadLink);
     });
 }
+
