@@ -73,18 +73,31 @@
 					
 					<form class="row">
 
-						<div class="col-md-6 mb-4">
-						  <label for="number" class="form-label">Ingresa tu número de seguro*</label>
-						  <input type="number" class="form-control input"  required>
-						  <div  class="feedback d-none"></div>
-						</div>
+						<div class="formInput col-md-6">
+							<span>
+								<label for="emptyFormInput${formCount}" contenteditable="true" class="font-weight-bold">Form Label</label>
+								<div class="input-group mb-3">
+								<span class="input-group-text" id="inputGroupPrepend3"><img src="img/nssicon.svg" alt="Número de Seguro Social"></span>
+									<input type="number" class="form-control" placeholder="ingresa tu número a 11 dígitos" id="emptyFormInput${formCount}">
+								</div>
+							</span>
+						 </div>
+
+
+
 
 						
-						<div class="col-md-6 mb-4">
-							<label for="name" class="form-label">Nombre</label>
-							<input type="text" class="form-control input"  required>
-							<div  class="feedback d-none"></div>
-						  </div>
+						 <div class="formInput col-md-6">
+							<span>
+								<label for="emptyFormInput${formCount}" contenteditable="true" class="font-weight-bold">Form Label ${formCount}</label>
+								<div class="input-group mb-3">
+									<input type="text" class="form-control" id="emptyFormInput${formCount}">
+									<button type="button" class="input-group-append btn delete-button">
+										<i class="fas fa-times"></i>
+									</button>
+								</div>
+							</span>
+						 </div>
   
 
 					
@@ -131,7 +144,23 @@
 						  </div>
 						</div>
 
-						
+
+
+						<div class="formInput col-md-6">
+							<span>
+								<label for="emptyFormInput${formCount}" contenteditable="true" class="font-weight-bold">Form Label ${formCount}</label>
+								<div class="input-group mb-3">
+			
+								<span class="input-group-text" id="inputGroupPrepend3"><img src="img/mail.svg" alt="Correo electrónico"></span>
+									<input type="text" class="form-control" id="emptyFormInput${formCount}">
+									<button type="button" class="input-group-append btn delete-button">
+										<i class="fas fa-times"></i>
+									</button>
+								</div>
+							</span>
+						 </div>
+
+
 						<div class="row mb-4">
 							
 							<div class="col-6 offset-6 d-flex justify-content-end">
