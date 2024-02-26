@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="651.496" height="474.383" viewBox="0 0 651.496 474.383">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_184" data-name="Rectángulo 184" width="651.496" height="464.685" fill="#25336c"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_367" data-name="Grupo 367" transform="translate(-201 -233.389)">
+    <g id="Grupo_370" data-name="Grupo 370" transform="translate(4)">
+      <path id="Trazado_340" data-name="Trazado 340" d="M116.276,124.276v71.268H64.108Zm.944-93.46L0,192.428,4.085,256.3H116.276v47.119h58.452V256.3H198.3V195.543h-23.57V30.816Z" transform="translate(201 300.172)" fill="#25336c"/>
+      <path id="Trazado_341" data-name="Trazado 341" d="M79.211,152.646c0-88.79,46.195-123.059,100.248-123.059,54.995,0,98.99,37.384,98.99,123.059v37c0,87.236-45.565,123.45-98.363,123.45-52.168,0-100.876-33.881-100.876-123.062Zm60.965,37.384c0,41.668,16.658,59.972,38.653,59.972S217.8,231.7,217.8,190.03v-37c0-40.111-16.339-58.415-38.336-58.415-21.681,0-39.284,17.137-39.284,58.415Z" transform="translate(347.732 297.895)" fill="#25336c"/>
+      <path id="Trazado_342" data-name="Trazado 342" d="M331.057,30.815v164.73h23.57V256.3h-23.57v47.119H272.605V256.3H160.414l-4.085-63.869L273.549,30.815Zm-58.452,164.73V124.277l-52.168,71.268Z" transform="translate(490.587 300.169)" fill="#25336c"/>
+    </g>
+    <text id="ALGO_SALIÓ_MAL" data-name="ALGO SALIÓ MAL" transform="translate(352 280.389)" fill="#ea6835" font-size="45" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="0">ALGO SALIÓ MAL</tspan></text>
+    <text id="REGRESA_UN_PASO_ANTERIOR" data-name="REGRESA UN PASO ANTERIOR" transform="translate(224 680.548)" fill="#ea6835" font-size="45" font-family="Poppins-Light, Poppins" font-weight="300"><tspan x="0" y="0">REGRESA UN PASO ANTERIOR</tspan></text>
+    <g id="Grupo_299" data-name="Grupo 299" transform="translate(201 243.087)">
+      <g id="Grupo_298" data-name="Grupo 298" clip-path="url(#clip-path)">
+        <line id="Línea_17" data-name="Línea 17" x2="589.025" transform="translate(31.095 57.084)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.5"/>
+        <line id="Línea_18" data-name="Línea 18" x2="589.025" transform="translate(31.095 386.485)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="0.5"/>
+      </g>
+    </g>
+  </g>
+</svg>
