@@ -319,15 +319,15 @@ border-radius: 5px 0 0 5px;
     border-radius: 50%;
   }
   
-  input:checked+.slider {
+  input:checked + .slider {
     background-color: #2196F3;
   }
   
-  input:focus+.slider {
+  input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
   }
   
-  input:checked+.slider:before {
+  input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
@@ -577,225 +577,6 @@ input#formFileMultiple {
 }
 
 
-.secciones-border{
-    border-radius: 15px;
-    background-color: #eeeeee;
-    border: 0.1rem ridge #EF48B6;
-}
-
-.shadow-left-bottom {
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-}
-
-.shadow-left-bottom:hover {
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
-}
-
-h4{
-    color: #25336C;
-    font-size: 1.3rem;
-    font-weight: 600;
-   
- }
- section #limpiarBtn124{
-    background-color: #EF48B6;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #EF48B6;
-    width: 100%;
-    height: 50px;
- }
-
- section #limpiarBtn124:hover{
-    background-color: #ffffff;
-    color: #fff;
-    border-radius: 5px;
-    border: 1px solid #EF48B6;
-    width: 100%;
-    height: 50px;
-    color: #EF48B6;
-   
- }
-
-
- canvas {
-    background-color: #F3F6F9;
-}
-
-
-
-
-
-section h4{
-   color: #25336C;
-   font-size: 1.3rem;
-   font-weight: 600;
-  
-}
-
-section label {
-    color: #25336C;
-    font-size: 0.95rem;
-    font-weight: 400;
- }
-
-.text-black{
-    color: #25336C!important;
-    font-size: 0.95rem;
-    font-weight: 400;
- }
-
-.formInput .input-group .form-control{
-    background-color: #F3F6F9;
-   
-}
-
-.form-check-input:checked {
-    background-color: #f40bb8;
-    border-color: #f40bb8;
-}
-
-
-.form-check-input {
-   
-    width: 1.5em;
-    height: 1.5em;
-    margin-top: .25em;
-    vertical-align: top;
-   
-}
-
-input:checked + .slider {
-    background-color: #1a44e2;
-}
-
-
-
-.secciones-border {
-    border-color: #ef48b640 !important;
-    background-color: #fff;
-}
-/* Estilos para la tabla */
-.table {
-    border-color: #1a44e2 !important;
-}
-
-.table>tbody>tr:nth-of-type(odd)>* {
-    background-color: #F3F6F9;
-}
-
-
-table tr td {
-    font-size: 1.0rem; 
-    padding:15px 0!important;  
-}
-
-
-table tr td a{
-    -webkit-border-radius: 5;
-  -moz-border-radius: 5;
-  border-radius: 5px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 15px;
-  background: #f40bb8;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  border: 1px solid #f40bb8;
-}
-
-table tr td a:hover{
-    -webkit-border-radius: 5;
-    -moz-border-radius: 5;
-    border-radius: 5px;
-    font-family: Arial;
-    color: #ffffff;
-    font-size: 15px;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    border: 1px solid #f40bb8;
-    background: #ffffff;
-    color: #f40bb8;
-   
-}
-
-
-
-
-.shadow-left-bottom {
-    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.file-icon {
-    position: absolute;
-    right: 0px;
-    /* Ajusta la posición de la imagen segun sea necesario */
-    max-height: 100%;
-}
-
-.custom-container {
-    /* Establece un ancho máximo y centra el contenido */
-    max-width: 100%;
-    margin: 0 auto;
-    /* Muestra una barra de desplazamiento horizontal si el contenido desborda */
-    overflow-x: auto;
-    /* Evita el desplazamiento vertical */
-    overflow-y: hidden;
-}
-
-
-
-button.input-group-append.btn.delete-button {
-    background-color: #EF48B6;
-    color: #fff;
-    border: none;
-}
-
-button.input-group-append.btn.delete-button:hover {
-    
-    background-color: #824EC8;
-    color: #fff;
-    border: none;
-}
-
-
-/* Thankyou pages text */
-.titleTp{
-    color: #ff8500;
-}
-
-.SubtitleTp{
-    color: #25336C;
-}
-
-@media only screen and (max-width:1440px) {
-
-
-    .ClinPol{
-        width: 100%;
-    }
-   
-    .ClinPol img {
-        max-width: 300px;
-        margin-top: 1%;
-        margin-bottom: 1%;
-    }
-    .col-md-9 {
-        flex: 0 0 auto;
-        width: 99%;
-    }
-
-    .height{
-        min-height: 20%;
-        height: 20%;
-    
-    }
-    .ClinPolLogin{
-        width: 100%;
-
-    }
-}
-
   /* media queries */
   @media only screen and (max-width:767px) { 
 	
@@ -844,24 +625,6 @@ button.input-group-append.btn.delete-button:hover {
         width: auto
     }
     
-}
-
-
-/* Media query para pantallas más pequeñas que 500px */
-@media (max-width: 500px) {
-    /* Ajusta estilos segun tus necesidades */
-    .container {
-        overflow-x: auto;
-        /* Agrega scroll horizontal */
-        width: 375px;
-        /* Establece un ancho fijo */
-        padding: 20px;
-        /* Puedes ajustar el padding segun tus necesidades */
-    }
-
-  .navbar span {
-        color: #25336C!important;
-        margin-left: 15px;
-    }
+    
     
 }
